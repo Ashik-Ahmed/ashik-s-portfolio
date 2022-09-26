@@ -4,8 +4,8 @@ import { HiOutlineMail } from 'react-icons/hi'
 
 const Contact = () => {
     return (
-        <div className='my-16'>
-            <h2 className='text-4xl font-bold'>Contact</h2>
+        <div className='my-8'>
+            <h2 className='mt-6 mb-10 text-4xl font-bold text-sky-500'>Contact</h2>
 
             <div className='container mx-auto md:grid grid-cols-3 gap-12'>
                 <div className="card w-96 bg-base-100 shadow-xl">
