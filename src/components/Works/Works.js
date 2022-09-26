@@ -292,7 +292,7 @@ const Works = () => {
                                                 <li className='ml-10'>Inventory page will list all products in tabular form.</li>
                                                 <li className='ml-10'>Functional Details, Update and Delete button is available for each product in the Inventory section</li>
                                                 <li className='ml-10'>Logged in user can also add any product to the inventory.</li>
-                                                <li className='ml-10'>User can see the list of products added by them seperately in My Items page.</li>
+                                                <li className='ml-10'>User can see the list of products added by them separately in My Items page.</li>
                                             </ul>
                                         </div>
                                         <div>

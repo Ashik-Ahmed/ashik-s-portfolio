@@ -1,0 +1,10 @@
+.skill-card {
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow: 24px 24px 48px #989898,
+        -24px -24px 48px #ffffff;
+}
+
+.skill-card:hover {
+    background-color: skyblue;
+}
