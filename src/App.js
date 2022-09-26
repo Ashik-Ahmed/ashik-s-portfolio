@@ -4,6 +4,9 @@ import Banner from './components/Banner/Banner';
 import Works from './components/Works/Works';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <Works />
       <Skills />
       <Contact />
+
+
+      <ToastContainer />
     </div>
   );
 }
