@@ -11,11 +11,13 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Banner />
-      <Works />
-      <Skills />
-      <Contact />
+      <div className='bg-gray-200'>
+        <Navbar />
+        <Banner />
+        <Works />
+        <Skills />
+        <Contact />
+      </div>
 
 
       <ToastContainer />

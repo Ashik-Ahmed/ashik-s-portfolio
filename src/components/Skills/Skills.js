@@ -19,7 +19,7 @@ import vscode from '../../assets/vscode.png';
 
 const Skills = () => {
     return (
-        <div className='my-8'>
+        <div className='my-8' id='skills'>
             <h3 className='mt-6 mb-10 text-4xl font-bold text-sky-500'>My Skills</h3>
             <div className='container mx-auto grid md:grid-cols-4 gap-6'>
                 <div className='skill-card flex gap-4 items-center transform transition-transform hover:-translate-y-1 p-4'>

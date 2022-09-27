@@ -2,11 +2,21 @@ import React from 'react';
 import { HiExternalLink } from 'react-icons/hi';
 import { AiFillGithub } from 'react-icons/ai';
 import './works.css';
+import gearupHome from '../../assets/gearup/home.png';
+import gearupManageOrder from '../../assets/gearup/manage-order.png';
+import gearupMyOrder from '../../assets/gearup/my-order.png';
+import gearupProfile from '../../assets/gearup/profile.png';
+import gearupPurchase from '../../assets/gearup/purchase.png';
+
+import manageWareHome from '../../assets/manageware/home.png';
+import manageWareDetails from '../../assets/manageware/details.png';
+import manageWareInventory from '../../assets/manageware/inventory.png';
+import manageWareUpdate from '../../assets/manageware/update.png';
 
 const Works = () => {
     return (
-        <div>
-            <h2 className='text-4xl font-bold text-sky-500'>My Works</h2>
+        <div className='mt-14' id='works'>
+            <h2 className='my-6 text-4xl font-bold text-sky-500'>My Works</h2>
 
             <div className='grid md:grid-cols-3'>
                 <div class="py-4">
@@ -33,36 +43,43 @@ const Works = () => {
                         <input type="checkbox" id="gearup-modal" className="modal-toggle" />
                         <div className="modal">
                             <div className="modal-box w-11/12 max-w-6xl bg-gray-200">
-                                <label htmlFor="gearup-modal" className="btn btn-sm bg-pink-500 hover:bg-pink-600 text-white btn-circle absolute right-2 top-2">✕</label>
+                                <label htmlFor="gearup-modal" className="btn btn-sm bg-pink-500 hover:bg-pink-600 text-white btn-circle border-0 absolute right-2 top-2">✕</label>
                                 <div className='grid md:grid-cols-2 gap-8'>
                                     <div>
                                         <div className="carousel w-full">
                                             <div id="gearup-slide1" className="carousel-item relative w-full">
-                                                <img alt="ecommerce" class="w-full lg:h-full h-64 object-cover object-center rounded" src="https://placeimg.com/400/400/arch" />
+                                                <img alt="ecommerce" class="w-full lg:h-full h-64 object-cover object-center rounded" src={gearupHome} />
                                                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                                    <a href="#gearup-slide4" className="btn btn-circle">❮</a>
-                                                    <a href="#gearup-slide2" className="btn btn-circle">❯</a>
+                                                    <a href="#gearup-slide5" className="btn btn-info bg-transparent btn-circle">❮</a>
+                                                    <a href="#gearup-slide2" className="btn btn-info bg-transparent btn-circle">❯</a>
                                                 </div>
                                             </div>
                                             <div id="gearup-slide2" className="carousel-item relative w-full">
-                                                <img alt="ecommerce" class="w-full lg:h-auto h-64 object-cover object-center rounded" src="https://placeimg.com/400/400/arch" />
+                                                <img alt="ecommerce" class="w-fit h-fit my-auto rounded" src={gearupProfile} />
                                                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                                    <a href="#gearup-slide1" className="btn btn-circle">❮</a>
-                                                    <a href="#gearup-slide3" className="btn btn-circle">❯</a>
+                                                    <a href="#gearup-slide1" className="btn btn-info bg-transparent btn-circle">❮</a>
+                                                    <a href="#gearup-slide3" className="btn btn-info bg-transparent btn-circle">❯</a>
                                                 </div>
                                             </div>
                                             <div id="gearup-slide3" className="carousel-item relative w-full">
-                                                <img alt="ecommerce" class="w-full lg:h-auto h-64 object-cover object-center rounded" src="https://placeimg.com/400/400/arch" />
+                                                <img alt="ecommerce" class="w-fit h-fit my-auto rounded" src={gearupPurchase} />
                                                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                                    <a href="#gearup-slide2" className="btn btn-circle">❮</a>
-                                                    <a href="#gearup-slide4" className="btn btn-circle">❯</a>
+                                                    <a href="#gearup-slide2" className="btn btn-info bg-transparent btn-circle">❮</a>
+                                                    <a href="#gearup-slide4" className="btn btn-info bg-transparent btn-circle">❯</a>
                                                 </div>
                                             </div>
                                             <div id="gearup-slide4" className="carousel-item relative w-full">
-                                                <img alt="ecommerce" class="w-full lg:h-auto h-64 object-cover object-center rounded" src="https://placeimg.com/400/400/arch" />
+                                                <img alt="ecommerce" class="w-fit h-fit my-auto object-cover object-center rounded" src={gearupMyOrder} />
                                                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                                    <a href="#gearup-slide3" className="btn btn-circle">❮</a>
-                                                    <a href="#gearup-slide1" className="btn btn-circle">❯</a>
+                                                    <a href="#gearup-slide3" className="btn btn-info bg-transparent btn-circle">❮</a>
+                                                    <a href="#gearup-slide5" className="btn btn-info bg-transparent btn-circle">❯</a>
+                                                </div>
+                                            </div>
+                                            <div id="gearup-slide5" className="carousel-item relative w-full">
+                                                <img alt="ecommerce" class="w-fit h-fit my-auto object-cover object-center rounded" src={gearupManageOrder} />
+                                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                                    <a href="#gearup-slide4" className="btn btn-info bg-transparent btn-circle">❮</a>
+                                                    <a href="#gearup-slide1" className="btn btn-info bg-transparent btn-circle">❯</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +162,7 @@ const Works = () => {
                         <input type="checkbox" id="quizzie-modal" className="modal-toggle" />
                         <div className="modal">
                             <div className="modal-box w-11/12 max-w-6xl bg-gray-200">
-                                <label htmlFor="quizzie-modal" className="btn btn-sm bg-pink-500 hover:bg-pink-600 text-white btn-circle absolute right-2 top-2">✕</label>
+                                <label htmlFor="quizzie-modal" className="btn btn-sm bg-pink-500 hover:bg-pink-600 text-white btn-circle border-0 absolute right-2 top-2">✕</label>
                                 <div className='grid md:grid-cols-2 gap-8'>
                                     <div>
                                         <div className="carousel w-full">
@@ -243,33 +260,33 @@ const Works = () => {
                         <input type="checkbox" id="manageware-modal" className="modal-toggle" />
                         <div className="modal">
                             <div className="modal-box w-11/12 max-w-6xl bg-gray-200">
-                                <label htmlFor="manageware-modal" className="btn btn-sm bg-pink-500 hover:bg-pink-600 text-white btn-circle absolute right-2 top-2">✕</label>
+                                <label htmlFor="manageware-modal" className="btn btn-sm bg-pink-500 hover:bg-pink-600 text-white btn-circle border-0 absolute right-2 top-2">✕</label>
                                 <div className='grid md:grid-cols-2 gap-8'>
                                     <div>
                                         <div className="carousel w-full">
                                             <div id="manageware-slide1" className="carousel-item relative w-full">
-                                                <img alt="ecommerce" class="w-full lg:h-full h-64 object-cover object-center rounded" src="https://placeimg.com/400/400/arch" />
+                                                <img alt="ecommerce" class="w-fit h-fit my-auto object-cover object-center rounded" src={manageWareHome} />
                                                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                                     <a href="#manageware-slide4" className="btn btn-circle">❮</a>
                                                     <a href="#manageware-slide2" className="btn btn-circle">❯</a>
                                                 </div>
                                             </div>
                                             <div id="manageware-slide2" className="carousel-item relative w-full">
-                                                <img alt="ecommerce" class="w-full lg:h-auto h-64 object-cover object-center rounded" src="https://placeimg.com/400/400/arch" />
+                                                <img alt="ecommerce" class="w-fit h-fit my-auto object-cover object-center rounded" src={manageWareInventory} />
                                                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                                     <a href="#manageware-slide1" className="btn btn-circle">❮</a>
                                                     <a href="#manageware-slide3" className="btn btn-circle">❯</a>
                                                 </div>
                                             </div>
                                             <div id="manageware-slide3" className="carousel-item relative w-full">
-                                                <img alt="ecommerce" class="w-full lg:h-auto h-64 object-cover object-center rounded" src="https://placeimg.com/400/400/arch" />
+                                                <img alt="ecommerce" class="w-fit h-fit my-auto object-cover object-center rounded" src={manageWareDetails} />
                                                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                                     <a href="#manageware-slide2" className="btn btn-circle">❮</a>
                                                     <a href="#manageware-slide4" className="btn btn-circle">❯</a>
                                                 </div>
                                             </div>
                                             <div id="manageware-slide4" className="carousel-item relative w-full">
-                                                <img alt="ecommerce" class="w-full lg:h-auto h-64 object-cover object-center rounded" src="https://placeimg.com/400/400/arch" />
+                                                <img alt="ecommerce" class="w-fit h-fit my-auto object-cover object-center rounded" src={manageWareUpdate} />
                                                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                                     <a href="#manageware-slide3" className="btn btn-circle">❮</a>
                                                     <a href="#manageware-slide1" className="btn btn-circle">❯</a>
@@ -277,7 +294,7 @@ const Works = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='text-left'>
+                                    <div className='text-left transform'>
                                         <h3 className="font-bold text-2xl">ManageWare (Warehouse Management)</h3>
                                         <div className='flex gap-3 mt-4'>
                                             <a href='https://manageware-40e96.web.app/' target='_blank' className='btn btn-xs btn-info flex gap-1 normal-case text-white' rel="noreferrer"><HiExternalLink />Visit</a>

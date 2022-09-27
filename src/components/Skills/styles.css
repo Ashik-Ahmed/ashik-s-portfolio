@@ -1,10 +1,11 @@
 .skill-card {
-    border-radius: 0px;
+    border-radius: 10px;
     background: #ffffff;
     box-shadow: 24px 24px 24px #e4e4e4,
         -24px -24px 56px #ffffff;
 }
 
 .skill-card:hover {
-    background-color: skyblue;
+    background-color: #38BDF8;
+    color: white;
 }

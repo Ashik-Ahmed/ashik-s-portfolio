@@ -19,14 +19,15 @@ const Contact = () => {
         emailjs.sendForm('service_dcch1lq', 'template_n1myfln', form.current, 'T00TwejzqkVHjfVU1')
             .then((result) => {
                 console.log(result.text);
-                toast.success('We have received your message')
+                toast.success('We have received your message');
+                e.target.reset();
             }, (error) => {
                 console.log(error.text);
             });
     };
 
     return (
-        <div className='my-8'>
+        <div className='py-8' id='contact'>
             <h2 className='mt-6 mb-10 text-4xl font-bold text-sky-500'>Contact</h2>
 
             <div className='container mx-auto md:grid grid-cols-3 gap-12'>
@@ -71,14 +72,14 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className='my-6 container mx-auto'>
+            <div className='my-12 container mx-auto'>
                 <form ref={form} onSubmit={sendEmail}>
                     <div className='flex gap-6 w-full mb-4'>
-                        <input name='user_name' type="text" placeholder="Full Name" className="input input-bordered w-full" required />
-                        <input name='user_email' type="email" placeholder="Email Address" className="input input-bordered w-full" required />
+                        <input name='user_name' type="text" placeholder="Full Name" className="input w-full" required />
+                        <input name='user_email' type="email" placeholder="Email Address" className="input w-full" required />
                     </div>
-                    <input name='subject' type="text" placeholder="Subject" className="input input-bordered w-full mb-4" required />
-                    <textarea name='message' type="text" placeholder="Message" className=" textarea input-bordered w-full mb-4" required />
+                    <input name='subject' type="text" placeholder="Subject" className="input w-full mb-4" required />
+                    <textarea name='message' type="text" placeholder="Message" className=" textarea w-full mb-4" required />
                     <input type="submit" value='Send Message' className='btn btn-info text-white' />
                 </form>
             </div>

@@ -45,9 +45,9 @@ const Banner = () => {
                     <img src="https://i.ibb.co/hCts3w5/no-bg-title-dbcea04ced33eb7d4bb2.png" alt="" />
                 </div>
                 <div className='flex flex-col'>
-                    <img className='w-44 mask mask-hexagon bg-blue-100 p-4 shadow-md' src="https://i.ibb.co/B6znDT5/react.png" alt="" />
-                    <img className='w-48 mask mask-hexagon bg-blue-100 p-3 shadow-md  ml-16 -mt-6' src="https://i.ibb.co/5Gfk5Lj/mongodb.png" alt="" />
-                    <img className='w-40 mask mask-hexagon bg-blue-100 p-4 shadow-md  -mt-7' src="https://i.ibb.co/xs0HFwW/nodejs.png" alt="" />
+                    <img className='w-44 mask mask-hexagon bg-gray-400 p-4 shadow-md' src="https://i.ibb.co/B6znDT5/react.png" alt="" />
+                    <img className='w-48 mask mask-hexagon bg-gray-400 p-3 shadow-md  ml-16 -mt-6' src="https://i.ibb.co/5Gfk5Lj/mongodb.png" alt="" />
+                    <img className='w-40 mask mask-hexagon bg-gray-400 p-4 shadow-md  -mt-7' src="https://i.ibb.co/xs0HFwW/nodejs.png" alt="" />
                 </div>
             </div>
         </div>
